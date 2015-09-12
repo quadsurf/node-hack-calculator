@@ -11,3 +11,7 @@ Just grab the one you think is most fitting at any given time!
 * [Michael Herman's stash of programming exercises](https://github.com/mjhea0/programming-exercises)
 * [Code Problems](https://github.com/blakeembrey/code-problems)
 * [Rosetta Stone](http://rosettacode.org/wiki/Rosetta_Code)
+
+## Todo
+
+There are 68. We should have AT LEAST 120 in here.
