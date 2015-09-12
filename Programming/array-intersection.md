@@ -1,4 +1,5 @@
 Given two arrays of Numbers, return an array containing elements common to both arrays, for example:
+
 ```
   var test1 = [1,2,3,4,5];
   var test2 = [3,4,7,8,9];
