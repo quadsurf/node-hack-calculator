@@ -1,4 +1,6 @@
+
 ***
+
 Write a Node.js script that takes a command line argument for a filename, then uses fs.readFile and fs.writeFile to produce a copy of the file in which all of the lines have been reversed and the additional extension .reverse has been added. Here is what usage looks like:
   // in foo.txt
   a
