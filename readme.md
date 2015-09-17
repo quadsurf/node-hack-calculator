@@ -18,6 +18,6 @@ There are 68. We should have AT LEAST 120 in here.
 
 ## Updating Readme.md:
 
-If you add in new individual markdown files, just run this to generate a new readme for that directory:
+If you add or modify markdown files in the subdirectories, just run this from the parent dir to regenerate all the readmes:
 
-```awk 'FNR==1{print "***"}1' *.md > readme.md```
+```for dir in *; do (if [ -d $dir ]; then cd $dir && rm readme.md; awk 'FNR==1{print "\n***\n"}1' *.md > readme.md; fi); done```
