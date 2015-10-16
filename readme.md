@@ -12,6 +12,7 @@ Just grab the one you think is most fitting at any given time!
 * [Code Problems](https://github.com/blakeembrey/code-problems)
 * [Rosetta Stone](http://rosettacode.org/wiki/Rosetta_Code)
 * [Javascript coding challenges and interview questions](https://github.com/kolodny/exercises)
+* [Recursion exercises](http://roman01la.github.io/recursion-exercises/)
 
 ## Todo
 
