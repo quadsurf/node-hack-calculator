@@ -13,6 +13,7 @@ Just grab the one you think is most fitting at any given time!
 * [Rosetta Stone](http://rosettacode.org/wiki/Rosetta_Code)
 * [Javascript coding challenges and interview questions](https://github.com/kolodny/exercises)
 * [Recursion exercises](http://roman01la.github.io/recursion-exercises/)
+* [5 Interview Questions on Node.js](http://www.codingdefined.com/2015/10/5-interview-questions-on-nodejs.html)
 
 ## Todo
 
