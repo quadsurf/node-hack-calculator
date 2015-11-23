@@ -1,4 +1,4 @@
-Use the forEach method to implement a function that returns the average number within an array.
+Create a function that uses `Array.forEach()` to calculate and return the average of an array's values.
 
 Example:
 
