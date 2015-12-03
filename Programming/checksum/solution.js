@@ -56,8 +56,17 @@ function computeChecksumSimple(importantData){
 	return sum;
 }
 
+function computeChecksumSimplePlus(importantData){
+	var sum = 0;
+	for(var i = 0; i < importantData.length; i++) {
+		sum += importantData.charCodeAt(i) * (i+1);
+	}
+	return sum;
+}
+
 test(computeChecksumSimple);
 test(computeChecksumRobust);
+test(computeChecksumSimplePlus);
 
 function test(checksumFunction){
 	var failedTests = [];
