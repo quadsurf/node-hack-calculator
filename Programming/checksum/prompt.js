@@ -121,15 +121,25 @@ function test(checksumFunction){
 function corruptDataRandomly(importantData) {
 	
 	var randomNumber = Math.random();
-	// 30% of the time, a randomly sized block of the importantData will be changed
-	// to random letters starting at a random location. This is typically easier to 
-	// detect
-	if(randomNumber < .3) {
+	// 10% of the time, a randomly sized block of the importantData will be changed
+	if(randomNumber < .1) {
 		return corruptBlock(importantData);
 	}
 	// 10% of the time, two characters will be swapped. This is harder to detect.
-	else if(randomNumber < .4) {
+	else if(randomNumber < .2) {
 		return corruptBySwapping(importantData);
+	}
+	// 10% of the time, the data will be shuffled
+	else if(randomNumber < .3) {
+		return shuffleString(importantData);
+	}
+	// 10% of the time, one character will be bit-shifted left once
+	else if(randomNumber < .4) {
+		return shiftOneCharacter(importantData);
+	}
+	// 10% of the time, the data will just be replaced wholesale
+	else if(randomNumber < .5){
+		return createRandomString();
 	}
 
 	return importantData;
@@ -142,6 +152,30 @@ function createRandomString(){
 		str += alphaChars[Math.floor(Math.random() * 52)];
 	}
 	return str;
+}
+
+function shiftOneCharacter(importantData) {
+	var bitLocation = Math.floor(Math.random() * importantData.length);
+	var stringBuilder = "";
+	for(var i = 0; i < importantData.length; i++) {
+		var character = importantData[i];
+		if(i === bitLocation){
+			character = character << 1;
+		}
+
+		stringBuilder += character;
+	}
+	return stringBuilder;
+
+}
+
+function shuffleString(importantData) {
+	var arr = importantData.split("");
+	arr.sort(function(){
+		return (Math.random() * 2) - 1;
+	});
+
+	return arr.join("");
 }
 
 // Corrupt a randomly sized block of the data
