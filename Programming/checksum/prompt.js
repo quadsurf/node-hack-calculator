@@ -21,7 +21,12 @@
 	tests it against the checksum value that was also recieved. 
 
 	If the two checksums are the same, the data is assumed not
-	to have been corrupted. 
+	to have been corrupted. However, a limitation of the checksum
+	paradigm, is that the checksum itself **MUST BE A SINGLE INTEGER**
+	
+	There are good reasons for this: if we send a small checksum as in
+	a 64 bit integer it is much less likely to corrupted, and it doesn't
+	bloat our payload.
 
 	Your task is to create a checksum algorithm which can detect
 	if a string has been corrupted!
