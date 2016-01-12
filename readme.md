@@ -16,6 +16,7 @@ Just grab the one you think is most fitting at any given time!
 * [5 Interview Questions on Node.js](http://www.codingdefined.com/2015/10/5-interview-questions-on-nodejs.html)
 * [10 questions I've been asked more than once](https://www.reddit.com/r/javascript/comments/3rb88w/ten_questions_ive_been_asked_most_more_than_once/)
 * [CodeQuizzes](http://www.codequizzes.com/)
+* [Code Wars](http://www.codewars.com/) (Requires signup, get students to join the Galvanize team!)  
 
 ## Todo
 
